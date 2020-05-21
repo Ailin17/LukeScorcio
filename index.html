@@ -56,13 +56,17 @@
                 <button class="main-nav__menu-btn" onclick="menuToggle()"></button>
             </div>
             <ul class="main-nav__list md-hidden" id="menu-list">
-                <li class="main-nav__item nav-landing-page main-nav__item--active "><a href='#' onclick="navigation('landing-page')">Home</a></li>
+                <li class="main-nav__item nav-landing-page main-nav__item--active "><a href='#'
+                        onclick="navigation('landing-page')">Home</a></li>
                 <li class="main-nav__item nav-videos"><a href='#videos' onclick="navigation('videos')">Videos</a></li>
-                <li class="main-nav__item nav-gallery"><a href='#gallery' onclick="navigation('gallery')">Gallery</a></li>
-                <li class="main-nav__item nav-resume"><a href='#resume' onclick="navigation('resume')">Resum&eacute;</a></li>
+                <li class="main-nav__item nav-gallery"><a href='#gallery' onclick="navigation('gallery')">Gallery</a>
+                </li>
+                <li class="main-nav__item nav-resume"><a href='#resume' onclick="navigation('resume')">Resum&eacute;</a>
+                </li>
                 <li class="main-nav__item nav-improv"><a href='#improv' onclick="navigation('improv')">Improv</a></li>
-<!--                 <li class="main-nav__item"><a href='#' onclick="navigation('contact')">Contact</a></li>
- -->            </ul>
+                <!--                 <li class="main-nav__item"><a href='#' onclick="navigation('contact')">Contact</a></li>
+ -->
+            </ul>
             <small class="sm-hidden">&copy; 2020 by Ailin Pedrossian</small>
         </nav>
     </div>
@@ -70,7 +74,7 @@
     <!--------------------------------- Landing Page -------------------------------->
     <section id="section-landing-page" class="landing-page">
         <h1 class="heading-1 main-heading">
-            <span class="heading-span">Luke Scorcio</span>
+            <span class="heading-span">Luke Scorcion</span>
         </h1>
         <h4 class="heading-4 main-subheading"><span>Actor.</span><span>Writer.</span><span>Comedian.</span></h4>
         <div class="contact-info">
@@ -82,7 +86,9 @@
                 <p class="contact-text">Studio City, California 91607</p>
                 <p class="contact-text">(818) 306-6420 ex. 221</p>
             </div>
-            <div class="luke-info hidden"><p class="contact-text"><a href="mailto: abc@example.com">LukeScorcio@gmail.com</a></p></div>
+            <div class="luke-info hidden">
+                <p class="contact-text"><a href="mailto: abc@example.com">LukeScorcio@gmail.com</a></p>
+            </div>
         </div>
         <div class="img-wrapper">
             <img src="img/bg-contrast.png">
@@ -187,14 +193,8 @@
 
             <a href="resume.pdf" target="_blank" class="btn btn-res small-res">Open PDF in a New Tab</a>
             <img src='resume.jpg' alt='resume' class='small-res resume-img'>
-                <iframe 
-                    class="resume" 
-                    allowfullscreen="true"
-                    src="resume.pdf" 
-                    width="640" 
-                    height="360" 
-                   frameborder="0">
-                </iframe>
+            <iframe class="resume" allowfullscreen="true" src="resume.pdf" width="640" height="360" frameborder="0">
+            </iframe>
         </div>
     </section>
 
@@ -203,27 +203,29 @@
     <section id="section-improv" class="improv hidden open-down">
         <div class="section-wrapper section-wrapper-improv fade-delay">
             <h1 class="heading-2 headline">Improv</h1>
-                        <div class="tab-wrapper">
-                            <a href="#" id="imp-vids" class="tab tab--active"><span class="tab__text">Videos</span></a>
-                            <a href="#" id="imp-pics" class="tab"><span class="tab__text">Photos</span></a>
-                            <a href="#" id="imp-bio" class="tab"><span class="tab__text">Bio</span></a>                            
-                        </div>
-                        <div class="video-img-wrapper imp-vids improv-sec">
-                             <div class="improv-video-link" id="vimprov-3"><img src="img/vid12.png" alt="" class="video-img"><small
-                                    class="vid-title"></small></div>
-                            <div class="improv-video-link" id="vimprov-4"><img src="img/vid13.png" alt="" class="video-img"><small
-                                    class="vid-title"></small></div>
-                        </div>
-                        <div class="improv-img-wrapper imp-pics improv-sec hidden">                          
-                            <img src="img/img10.jpg" alt="" class="improv-img">
-                            <img src="img/img11.jpg" alt="" class="improv-img">
-                            <img src="img/img12.jpg" alt="" class="improv-img">
-                        </div>
-                        <div class="improv-bio-wrapper imp-bio improv-sec hidden">
-                            <p class="improv-bio">Luke has studied improv at UCB Los Angeles and iO West. He performs regularly on the team Pretty Ugly which is coached
-                            by Brian James O’Connell. Back in Oshkosh, Luke was one of the original improv team members at The Backlot Comedy House
-                            and was the creator of The Adventures of Sammy the Space Slug.</p>
-                        </div>
+            <div class="tab-wrapper">
+                <a href="#" id="imp-vids" class="tab tab--active"><span class="tab__text">Videos</span></a>
+                <a href="#" id="imp-pics" class="tab"><span class="tab__text">Photos</span></a>
+                <a href="#" id="imp-bio" class="tab"><span class="tab__text">Bio</span></a>
+            </div>
+            <div class="video-img-wrapper imp-vids improv-sec">
+                <div class="improv-video-link" id="vimprov-3"><img src="img/vid12.png" alt="" class="video-img"><small
+                        class="vid-title"></small></div>
+                <div class="improv-video-link" id="vimprov-4"><img src="img/vid13.png" alt="" class="video-img"><small
+                        class="vid-title"></small></div>
+            </div>
+            <div class="improv-img-wrapper imp-pics improv-sec hidden">
+                <img src="img/img10.jpg" alt="" class="improv-img">
+                <img src="img/img11.jpg" alt="" class="improv-img">
+                <img src="img/img12.jpg" alt="" class="improv-img">
+            </div>
+            <div class="improv-bio-wrapper imp-bio improv-sec hidden">
+                <p class="improv-bio">Luke has studied improv at UCB Los Angeles and iO West. He performs regularly on
+                    the team Pretty Ugly which is coached
+                    by Brian James O’Connell. Back in Oshkosh, Luke was one of the original improv team members at The
+                    Backlot Comedy House
+                    and was the creator of The Adventures of Sammy the Space Slug.</p>
+            </div>
         </div>
     </section>
 
@@ -258,42 +260,63 @@
     </div>
     <div id="vidbox">
         <!-- Reels  -->
-       <iframe class="hidden reel-1" src="https://player.vimeo.com/video/316643509" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe class="hidden reel-1" src="https://player.vimeo.com/video/316643509" width="640" height="360"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-       <iframe class="hidden reel-2" src="https://player.vimeo.com/video/408193288" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe class="hidden reel-2" src="https://player.vimeo.com/video/408193288" width="640" height="360"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
         <!-- Shorts  -->
-        <iframe class="short-1 hidden" src="https://player.vimeo.com/video/285795078?title=0&byline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe class="short-1 hidden" src="https://player.vimeo.com/video/285795078?title=0&byline=0" width="640"
+            height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-        <iframe class="short-2 hidden" width="560" height="315" src="https://www.youtube.com/embed/gXoCFtS4FSo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="short-2 hidden" width="560" height="315" src="https://www.youtube.com/embed/gXoCFtS4FSo"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <!-- Songs  -->       
-   
-        <iframe  class="hidden song-1" width="560" height="315" src="https://www.youtube.com/embed/6FYB8b6sPcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Songs  -->
 
-        <!-- Sketches  -->       
+        <iframe class="hidden song-1" width="560" height="315" src="https://www.youtube.com/embed/6FYB8b6sPcw"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <iframe class="hidden sketch-1" width="560" height="315" src="https://www.youtube.com/embed/DnCK7WTPrU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Sketches  -->
 
-        <iframe class="hidden sketch-2" width="560" height="315" src="https://www.youtube.com/embed/nz0oaI2XCcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="hidden sketch-1" width="560" height="315" src="https://www.youtube.com/embed/DnCK7WTPrU8"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <iframe class="hidden sketch-3" width="560" height="315" src="https://www.youtube.com/embed/o4IKhIHjTDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="hidden sketch-2" width="560" height="315" src="https://www.youtube.com/embed/nz0oaI2XCcc"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <iframe class="hidden sketch-4" width="560" height="315" src="https://www.youtube.com/embed/Rm5qcy19MNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="hidden sketch-3" width="560" height="315" src="https://www.youtube.com/embed/o4IKhIHjTDE"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <iframe class="hidden sketch-5" width="560" height="315" src="https://www.youtube.com/embed/R4wxClU3XH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="hidden sketch-4" width="560" height="315" src="https://www.youtube.com/embed/Rm5qcy19MNg"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <iframe class="hidden sketch-6" width="560" height="315" src="https://www.youtube.com/embed/7kp9bSbyQBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="hidden sketch-5" width="560" height="315" src="https://www.youtube.com/embed/R4wxClU3XH8"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-            
+        <iframe class="hidden sketch-6" width="560" height="315" src="https://www.youtube.com/embed/7kp9bSbyQBs"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
         <!-- Improv  -->
 
 
-        <iframe class="hidden vimprov-1 vimprov-3" src="https://player.vimeo.com/video/408014180" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe class="hidden vimprov-1 vimprov-3" src="https://player.vimeo.com/video/408014180" width="640"
+            height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-        <iframe  class="hidden vimprov-2 vimprov-4"src="https://player.vimeo.com/video/408186854" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            
+        <iframe class="hidden vimprov-2 vimprov-4" src="https://player.vimeo.com/video/408186854" width="640"
+            height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
     </div>
 </body>
 
