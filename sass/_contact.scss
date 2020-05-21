@@ -1,0 +1,23 @@
+.section-wrapper-contact {
+    display: grid;
+    grid-template-columns: minmax(50rem, 2fr) 1fr;
+    grid-template-rows: 1fr 7fr;
+}
+
+
+
+.luke-contact{
+    margin-bottom: 3rem;
+}
+
+.contact-img {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    height: 100%;
+    align-self: end;
+    justify-self: end;
+}
+
+.contact-text{
+    color: $light-gray-1;
+}

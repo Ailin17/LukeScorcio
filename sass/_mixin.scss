@@ -1,0 +1,21 @@
+@mixin resp($breakpoint) {
+  @if $breakpoint == sm { // 600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+    @if $breakpoint == md { // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+    @if $breakpoint == lg { // 1200px
+    @media (max-width: 75em) { @content;}
+  }
+
+    @if $breakpoint == xl { // 1800px
+    @media (max-width: 112.5em) { @content;  }
+  } 
+}

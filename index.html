@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Luke Scorcio</title>
+</head>
+
+<body class="container">
+    <nav class="top-nav">
+        <div class="top-nav__item" title="Facebook">
+            <a target="_blank" href='https://www.facebook.com/luke.scorcio'>
+                <svg class="top-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-facebook">
+                </svg>
+            </a>
+        </div>
+        <div class="top-nav__item" title="Instagram">
+            <a target="_blank" href='https://www.instagram.com/lukescorcio/'>
+                <svg class="top-nav__icon" title="Instagram">
+                    <use xlink:href="img/sprite.svg#icon-instagram">
+                </svg>
+            </a>
+        </div>
+        <div class="top-nav__item" title="IMDb">
+            <a target="_blank" href='https://www.imdb.com/name/nm6063148/'>
+                <svg class="top-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-imdb">
+                </svg>
+            </a>
+        </div>
+        <div class="top-nav__item" title="LinkedIn">
+            <a target="_blank" href='https://www.linkedin.com/in/luke-scorcio-71a84265/'>
+                <svg class="top-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-linkedin">
+                </svg>
+            </a>
+        </div>
+        <div class="top-nav__item" title="YouTube">
+            <a target="_blank" href='https://www.youtube.com/channel/UCsgckVR0sSqkvUiRYGcKb8g?view_as=subscriber'>
+                <svg class="top-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-youtube">
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <div class="main-nav-container" id="nav-container">
+        <nav class="main-nav">
+            <div class="menu-btn-container">
+                <button class="main-nav__menu-btn" onclick="menuToggle()"></button>
+            </div>
+            <ul class="main-nav__list md-hidden" id="menu-list">
+                <li class="main-nav__item nav-landing-page main-nav__item--active "><a href='#' onclick="navigation('landing-page')">Home</a></li>
+                <li class="main-nav__item nav-videos"><a href='#videos' onclick="navigation('videos')">Videos</a></li>
+                <li class="main-nav__item nav-gallery"><a href='#gallery' onclick="navigation('gallery')">Gallery</a></li>
+                <li class="main-nav__item nav-resume"><a href='#resume' onclick="navigation('resume')">Resum&eacute;</a></li>
+                <li class="main-nav__item nav-improv"><a href='#improv' onclick="navigation('improv')">Improv</a></li>
+<!--                 <li class="main-nav__item"><a href='#' onclick="navigation('contact')">Contact</a></li>
+ -->            </ul>
+            <small class="sm-hidden">&copy; 2020 by Ailin Pedrossian</small>
+        </nav>
+    </div>
+
+    <!--------------------------------- Landing Page -------------------------------->
+    <section id="section-landing-page" class="landing-page">
+        <h1 class="heading-1 main-heading">
+            <span class="heading-span">Luke Scorcio</span>
+        </h1>
+        <h4 class="heading-4 main-subheading"><span>Actor.</span><span>Writer.</span><span>Comedian.</span></h4>
+        <div class="contact-info">
+            <a href="#" class="btn contact-info__btn" id="contact-info__btn">Get in Touch</a>
+            <div class="agent-contact hidden">
+                <!--   <p class="contact-text strong">Commerical Representation</p> -->
+                <p class="contact-text">Tim O'Shea - Activity</p>
+                <p class="contact-text">4705 Laurel Canyon Blvd., Suite 203</p>
+                <p class="contact-text">Studio City, California 91607</p>
+                <p class="contact-text">(818) 306-6420 ex. 221</p>
+            </div>
+            <div class="luke-info hidden"><p class="contact-text"><a href="mailto: abc@example.com">LukeScorcio@gmail.com</a></p></div>
+        </div>
+        <div class="img-wrapper">
+            <img src="img/bg-contrast.png">
+        </div>
+
+    </section>
+    <!--------------------------------- Videos -------------------------------->
+    <section id="section-videos" class="videos hidden open-down">
+        <div class="section-wrapper section-wrapper-videos fade-delay">
+            <h1 class="heading-2 headline">Videos</h1>
+
+            <div class="tab-wrapper">
+                <a href="#" id="reels" class="tab tab--active"><span class="tab__text">Reels</span></a>
+                <a href="#" id="shorts" class="tab"><span class="tab__text">Shorts</span></a>
+                <a href="#" id="songs" class="tab"><span class="tab__text">Songs</span></a>
+                <a href="#" id="sketches" class="tab"><span class="tab__text">Sketches</span></a>
+                <a href="#" id="vimprov" class="tab"><span class="tab__text">Improv</span></a>
+            </div>
+            <div class="video-img-wrapper">
+                <div class="video-link vid-reels" id="reel-1"><img src="img/vid1.png" alt="" class="video-img"><small
+                        class="vid-title"></small><span class="vid-url hidden"></span></div>
+                <div class="video-link vid-reels" id="reel-2"><img src="img/vid2.png" alt="" class="video-img"><small
+                        class="vid-title"></small></div>
+                <div class="video-link hidden vid-shorts" id="short-1"><img src="img/vid3.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-shorts" id="short-2"><img src="img/vid4.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-songs" id="song-1"><img src="img/vid5.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-sketches" id="sketch-1"><img src="img/vid6.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-sketches" id="sketch-2"><img src="img/vid7.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-sketches" id="sketch-3"><img src="img/vid8.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-sketches" id="sketch-4"><img src="img/vid9.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-sketches" id="sketch-5"><img src="img/vid10.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-sketches" id="sketch-6"><img src="img/vid11.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-vimprov" id="vimprov-1"><img src="img/vid12.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+                <div class="video-link hidden vid-vimprov" id="vimprov-2"><img src="img/vid13.png" alt=""
+                        class="video-img"><small class="vid-title"></small></div>
+
+            </div>
+        </div>
+    </section>
+    <!--------------------------------- Gallery -------------------------------->
+    <section id="section-gallery" class="gallery hidden open-down">
+        <div class="section-wrapper section-wrapper-gallery fade-delay">
+            <h1 class="heading-2 headline">Gallery</h1>
+            <div class="tab-wrapper">
+                <a href="#" id="headshot" class="tab tab--headshots tab--active">
+                    <span class="tab__text">Headshots</span>
+                </a>
+
+                <a href="#" id="film" class="tab tab--film-stills"><span class="tab__text">Film
+                        Stills</span></a>
+                <a href="#" id="redcarpet" class="tab tab--red-carpet"><span class="tab__text">Red Carpet</span></a>
+                <a href="#" id="improv" class="tab tab--improv"><span class="tab__text">Improv</span></a>
+                <a href="#" id="theater" class="tab tab--theater"><span class="tab__text">Theater</span></a>
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="img/img1.jpg" alt="" class="gallery-img gallery-img--headshot">
+                <img src="img/img2.jpg" alt="" class="gallery-img gallery-img--headshot">
+                <img src="img/img3.jpg" alt="" class="gallery-img gallery-img--headshot">
+                <img src="img/img4.jpg" alt="" class="gallery-img gallery-img--headshot">
+                <img src="img/img5.jpg" alt="" class="gallery-img gallery-img--headshot">
+                <img src="img/img6.jpg" alt="" class="gallery-img gallery-img--film hidden">
+                <img src="img/img7.jpg" alt="" class="gallery-img gallery-img--film hidden">
+                <img src="img/img8.jpg" alt="" class="gallery-img gallery-img--film hidden">
+                <img src="img/img9.jpg" alt="" class="gallery-img gallery-img--film hidden">
+                <img src="img/img10.jpg" alt="" class="gallery-img gallery-img--improv hidden">
+                <img src="img/img11.jpg" alt="" class="gallery-img gallery-img--improv hidden">
+                <img src="img/img12.jpg" alt="" class="gallery-img gallery-img--improv hidden">
+                <img src="img/img13.jpg" alt="" class="gallery-img gallery-img--redcarpet hidden">
+                <img src="img/img14.jpg" alt="" class="gallery-img gallery-img--redcarpet hidden">
+                <img src="img/img15.jpg" alt="" class="gallery-img gallery-img--redcarpet hidden">
+                <img src="img/img16.jpg" alt="" class="gallery-img gallery-img--redcarpet hidden">
+                <img src="img/img17.jpg" alt="" class="gallery-img gallery-img--redcarpet hidden">
+                <img src="img/img18.jpg" alt="" class="gallery-img gallery-img--redcarpet hidden">
+                <img src="img/img19.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img20.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img21.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img22.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img23.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img24.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img25.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img26.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img27.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img28.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------- Resume -------------------------------->
+    <section id="section-resume" class="hidden open-down">
+        <div class="section-wrapper section-wrapper-resume fade-delay">
+            <h1 class="heading-2 headline">Resum&eacute;</h1>
+
+            <a href="resume.pdf" target="_blank" class="btn btn-res small-res">Open PDF in a New Tab</a>
+            <img src='resume.jpg' alt='resume' class='small-res resume-img'>
+                <iframe 
+                    class="resume" 
+                    allowfullscreen="true"
+                    src="resume.pdf" 
+                    width="640" 
+                    height="360" 
+                   frameborder="0">
+                </iframe>
+        </div>
+    </section>
+
+
+    <!--------------------------------- Improv -------------------------------->
+    <section id="section-improv" class="improv hidden open-down">
+        <div class="section-wrapper section-wrapper-improv fade-delay">
+            <h1 class="heading-2 headline">Improv</h1>
+                        <div class="tab-wrapper">
+                            <a href="#" id="imp-vids" class="tab tab--active"><span class="tab__text">Videos</span></a>
+                            <a href="#" id="imp-pics" class="tab"><span class="tab__text">Photos</span></a>
+                            <a href="#" id="imp-bio" class="tab"><span class="tab__text">Bio</span></a>                            
+                        </div>
+                        <div class="video-img-wrapper imp-vids improv-sec">
+                             <div class="improv-video-link" id="vimprov-3"><img src="img/vid12.png" alt="" class="video-img"><small
+                                    class="vid-title"></small></div>
+                            <div class="improv-video-link" id="vimprov-4"><img src="img/vid13.png" alt="" class="video-img"><small
+                                    class="vid-title"></small></div>
+                        </div>
+                        <div class="improv-img-wrapper imp-pics improv-sec hidden">                          
+                            <img src="img/img10.jpg" alt="" class="improv-img">
+                            <img src="img/img11.jpg" alt="" class="improv-img">
+                            <img src="img/img12.jpg" alt="" class="improv-img">
+                        </div>
+                        <div class="improv-bio-wrapper imp-bio improv-sec hidden">
+                            <p class="improv-bio">Luke has studied improv at UCB Los Angeles and iO West. He performs regularly on the team Pretty Ugly which is coached
+                            by Brian James O’Connell. Back in Oshkosh, Luke was one of the original improv team members at The Backlot Comedy House
+                            and was the creator of The Adventures of Sammy the Space Slug.</p>
+                        </div>
+        </div>
+    </section>
+
+
+    <!--------------------------------- Contact -------------------------------->
+    <section id="section-contact" class="contact hidden open-down">
+        <div class="section-wrapper section-wrapper-contact fade-delay">
+            <h1 class="heading-2 headline">Contact</h1>
+            <div class="contact-info">
+                <div class="luke-contact">
+                    <h3 class="contact-text">Luke Scorcio</h3>
+                    <p class="contact-text">LukeScorcio@gmail.com</p>
+                </div>
+                <div class="agent-contact">
+                    <h3 class="contact-text">Commerical Representation - Activity</h3>
+                    <p class="contact-text">Tim O'Shea - Activity</p>
+                    <p class="contact-text">4705 Laurel Canyon Blvd., Suite 203</p>
+                    <p class="contact-text">Studio City, California 91607</p>
+                    <p class="contact-text">(818) 306-6420 ex. 221</p>
+                </div>
+            </div>
+            <img class="img contact-img" src="img/bg-contrast.png">
+        </div>
+    </section>
+    <div class="name-wrapper fade sm-hidden hidden">
+        <h2 class="heading-3 top-right-heading"><span class="heading-span">Luke Scorcio</span></h2>
+    </div>
+    <div id="lightbox">
+        <img src="" alt="" id="big-image">
+        <a id="larr" class="prev">&#10094;</a>
+        <a id="rarr" class="next">&#10095;</a>
+    </div>
+    <div id="vidbox">
+        <!-- Reels  -->
+       <iframe class="hidden reel-1" src="https://player.vimeo.com/video/316643509" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+       <iframe class="hidden reel-2" src="https://player.vimeo.com/video/408193288" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
+        <!-- Shorts  -->
+        <iframe class="short-1 hidden" src="https://player.vimeo.com/video/285795078?title=0&byline=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        <iframe class="short-2 hidden" width="560" height="315" src="https://www.youtube.com/embed/gXoCFtS4FSo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Songs  -->       
+   
+        <iframe  class="hidden song-1" width="560" height="315" src="https://www.youtube.com/embed/6FYB8b6sPcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Sketches  -->       
+
+        <iframe class="hidden sketch-1" width="560" height="315" src="https://www.youtube.com/embed/DnCK7WTPrU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="hidden sketch-2" width="560" height="315" src="https://www.youtube.com/embed/nz0oaI2XCcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="hidden sketch-3" width="560" height="315" src="https://www.youtube.com/embed/o4IKhIHjTDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="hidden sketch-4" width="560" height="315" src="https://www.youtube.com/embed/Rm5qcy19MNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="hidden sketch-5" width="560" height="315" src="https://www.youtube.com/embed/R4wxClU3XH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="hidden sketch-6" width="560" height="315" src="https://www.youtube.com/embed/7kp9bSbyQBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            
+        <!-- Improv  -->
+
+
+        <iframe class="hidden vimprov-1 vimprov-3" src="https://player.vimeo.com/video/408014180" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        <iframe  class="hidden vimprov-2 vimprov-4"src="https://player.vimeo.com/video/408186854" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+@function negativeHeightCalc($vw) {
+  @return 100 / $vw;
+}
