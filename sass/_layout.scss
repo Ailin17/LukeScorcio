@@ -279,7 +279,7 @@
   & .main-nav__menu-btn {
     background-color: $dark-gray-1;
     width: 3.5rem;
-    height: 0.25rem;
+    height: 2px;
     position: absolute;
     left: 20%;
     top: 50%;
@@ -293,9 +293,10 @@
       display: block;
       background-color: $dark-gray-1;
       width: 3.5rem;
-      height: 0.2rem;
+      height: 2px;
       cursor: pointer;
       transition: all 0.3s;
+      
     }
 
     &::before {
