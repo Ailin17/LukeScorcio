@@ -35,6 +35,14 @@
   &:hover {
     filter: brightness(1.2);
   }
+
+  &.obj-pos-top{
+    object-position: top;
+  }
+  &.obj-pos-20{
+    object-position: 0 20%;
+  }
+
 }
 
 #lightbox {

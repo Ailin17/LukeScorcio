@@ -153,6 +153,12 @@ p {
   text-decoration: none;
   text-align: center; }
 
+img.obj-pos-top {
+  object-position: top; }
+
+img.obj-pos-20 {
+  object-position: 0 20%; }
+
 .container {
   background-image: linear-gradient(to top right, #111111, #727272);
   background-size: contain;
@@ -771,6 +777,10 @@ p {
   box-sizing: border-box; }
   .gallery-img:hover {
     filter: brightness(1.2); }
+  .gallery-img.obj-pos-top {
+    object-position: top; }
+  .gallery-img.obj-pos-20 {
+    object-position: 0 20%; }
 
 #lightbox {
   animation: fadeIn 0.3s;

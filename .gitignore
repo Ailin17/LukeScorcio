@@ -1,2 +1,4 @@
 /node_modules
 /sass
+# Local Netlify folder
+.netlify
