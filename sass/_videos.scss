@@ -39,6 +39,15 @@
  & img {
     display: block;
   }
+  & small {
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto 2rem;
+    display: block;
+    color: $light-gray-1;
+    position: relative;
+    font-size: 1.5rem;
+  }
 
   &:hover {
     
@@ -60,11 +69,11 @@
       height: 0;
       border: 16px solid transparent;
       border-left: 20px solid #fff;
-      margin-top: -18px;
+      margin-top: -40px;
       margin-left: -7px;
     }
     &:before {
-      margin-top: -34px;
+      margin-top: -55px;
       margin-left: -34px;
       width: 60px;
       height: 60px;

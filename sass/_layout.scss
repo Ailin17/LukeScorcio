@@ -4,7 +4,10 @@
   display: grid;
 
   grid-template-rows:
-    [page-start] 7rem [topnav-end content-start] minmax(calc(100vh - 7rem), auto)
+    [page-start] 7rem [topnav-end content-start] minmax(
+      calc(100vh - 7rem),
+      auto
+    )
     [content-end];
   grid-template-columns:
     [page-start sidebar-start] 10rem 10rem [sidebar-end] 1fr [content-start] repeat(
@@ -22,7 +25,10 @@
 
   @media only screen and (max-width: 1000px) {
     grid-template-rows:
-      [page-start] 6rem [topnav-end] 0.5rem [content-start] minmax(calc(100vh - 6.5rem), auto)
+      [page-start] 6rem [topnav-end] 0.5rem [content-start] minmax(
+        calc(100vh - 6.5rem),
+        auto
+      )
       [content-end];
     grid-template-columns:
       [page-start content-start] repeat(8, [col-start] 1fr)
@@ -202,9 +208,20 @@
 
     &--active a {
       color: $primary-light !important;
-        font-family: $font-primary;
+      font-family: $font-primary;
     }
+
+
   }
+
+      & small {
+      color: $dark-gray-3;
+      font-family: $font-primary;
+      font-size: 1rem;
+      margin-left: 3.5rem;
+      position: absolute;
+      bottom: 1rem;
+    }
 }
 
 .big-menu {
@@ -296,7 +313,6 @@
       height: 2px;
       cursor: pointer;
       transition: all 0.3s;
-      
     }
 
     &::before {
@@ -306,15 +322,6 @@
       transform: translateY(0.8rem);
     }
   }
-}
-
-small {
-  color: $dark-gray-3;
-  font-family: $font-primary;
-  font-size: 1rem;
-  margin-left: 3.5rem;
-  position: absolute;
-  bottom: 1rem;
 }
 
 section {
