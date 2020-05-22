@@ -28,6 +28,12 @@
     grid-column: 1 / -1;
     grid-row: 3 /-1;
   }
+
+    @media only screen and (max-width: $bp-sm) {
+    &.shrink img{
+      width:60%;
+    }
+  }
 }
 
 .img-wrapper img {
@@ -37,7 +43,7 @@
   }
 
   @media only screen and (max-width: $bp-sm) {
-    width: 60%;
+    width: 100%;
   }
 }
 .main-heading {
@@ -141,6 +147,12 @@
     &.long-viewport {
       font-size: 2rem;
     }
+
+
+    &.mobile-bg{
+      padding: 2rem 1rem;
+      background:rgba(0,0,0,0.6);
+    }
 }
 
 .luke-info {
@@ -151,3 +163,7 @@
   }
 }
 
+.phone-no,
+.email{
+  color: $secondary;
+}

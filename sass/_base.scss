@@ -85,6 +85,12 @@ body {
   animation: openDown 1.2s ease-in;
 }
 
+
+.desaturate {
+  animation: desaturate 0.6s ease-in forwards;
+  transform-origin: bottom right;
+}
+
 p {
   color: $light-gray-1;
   font-family: $font-primary;

@@ -19,7 +19,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     landing_btn.addEventListener('click', () => {
         document.querySelector('.agent-contact').classList.remove('hidden');
         document.querySelector('.luke-info').classList.remove('hidden');
+        contact_info.add('mobile-bg');
         landing_btn.classList.add('hidden');
+        document.querySelector('.img-wrapper').classList.add('desaturate');
+
+       
+        
     })
 
     //================== Global Variables ===================//
@@ -107,6 +112,8 @@ function navigation(section) {
         document.querySelector('.agent-contact').classList.add('hidden');
         document.querySelector('.luke-info').classList.add('hidden');
         document.querySelector('#contact-info__btn').classList.remove('hidden');
+        document.querySelector('.contact-info').classList.remove('mobile-bg');
+        document.querySelector('.img-wrapper').classList.remove('desaturate');
     }
 
     // Selects first tab on page 
