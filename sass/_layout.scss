@@ -281,6 +281,7 @@
   display: none;
 
   @media only screen and (max-width: 1000px) {
+    z-index: 5000000;
     display: block;
     width: 6rem;
     height: 6rem;

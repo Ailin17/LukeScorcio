@@ -130,7 +130,7 @@ body {
   animation-fill-mode: alternate; }
 
 .fade-delay {
-  animation: fadeIn 0.5s ease-in-out 1.4s;
+  animation: fadeIn 0.5s ease-in-out 1.4s forwards;
   animation-fill-mode: backwards; }
 
 .open-down {
@@ -366,6 +366,7 @@ img.obj-pos-20 {
   display: none; }
   @media only screen and (max-width: 1000px) {
     .menu-btn-container {
+      z-index: 5000000;
       display: block;
       width: 6rem;
       height: 6rem;
@@ -488,7 +489,8 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   justify-content: space-around;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .tab-wrapper {
       grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); } }
