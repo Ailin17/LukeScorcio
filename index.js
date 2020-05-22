@@ -22,9 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         contact_info.add('mobile-bg');
         landing_btn.classList.add('hidden');
         document.querySelector('.img-wrapper').classList.add('desaturate');
-
-       
-        
+        document.querySelector('.landing-page').classList.add('open-contact');
     })
 
     //================== Global Variables ===================//
@@ -114,6 +112,7 @@ function navigation(section) {
         document.querySelector('#contact-info__btn').classList.remove('hidden');
         document.querySelector('.contact-info').classList.remove('mobile-bg');
         document.querySelector('.img-wrapper').classList.remove('desaturate');
+        document.querySelector('.landing-page').classList.remove('open-contact');
     }
 
     // Selects first tab on page 

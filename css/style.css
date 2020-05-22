@@ -553,7 +553,9 @@ p {
   @media only screen and (max-width: 37.5em) {
     .landing-page {
       grid-template-columns: 100%;
-      grid-template-rows: min-content min-content 1fr 1fr; } }
+      grid-template-rows: min-content min-content 1fr 3fr; } }
+  .landing-page.open-contact {
+    grid-template-rows: min-content min-content 1fr 1fr; }
 
 .img-wrapper {
   grid-column: 2 / -1;
@@ -660,9 +662,10 @@ p {
     background-color: #d2731f; }
   .contact-info.long-viewport {
     font-size: 2rem; }
-  .contact-info.mobile-bg {
-    padding: 2rem 1rem;
-    background: rgba(0, 0, 0, 0.6); }
+  @media only screen and (max-width: 37.5em) {
+    .contact-info.mobile-bg {
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.6); } }
 
 .luke-info {
   margin-top: 1rem; }
