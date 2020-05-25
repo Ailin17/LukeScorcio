@@ -35,8 +35,10 @@
   position: relative;
   float: left;
   cursor: pointer;
-  
- & img {
+  transition: all 3s ease-in;
+
+
+  & img {
     display: block;
   }
   & small {
@@ -50,10 +52,9 @@
   }
 
   &:hover {
-    
-    & img{
-        background-color: $primary-light;
-        filter: brightness(0.6);
+    & img {
+      background-color: $primary-light;
+      filter: brightness(0.6);
     }
 
     &:after,
@@ -82,10 +83,8 @@
       box-shadow: 0 0 4px rgba(black, 0.18);
       background: rgba(black, 0.42);
     }
-   
   }
 }
-
 
 #vidbox {
   animation: fadeIn 0.3s;
@@ -104,8 +103,8 @@
   }
 
   & iframe {
-  //  height:max-content;
+    height:80%;
     width: 80%;
     object-fit: contain;
   }
-} 
+}
