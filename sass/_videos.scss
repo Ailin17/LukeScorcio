@@ -10,7 +10,7 @@
 
 .video-img-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   grid-template-rows: min-content;
   justify-content: center;
   grid-gap: 0.7rem;
@@ -30,12 +30,13 @@
   box-sizing: border-box;
 }
 
-.video-link,
-.improv-video-link {
+a.video-link,
+a.improv-video-link {
   position: relative;
   float: left;
   cursor: pointer;
   transition: all 3s ease-in;
+  text-decoration: none;
 
 
   & img {

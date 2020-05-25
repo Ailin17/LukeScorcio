@@ -85,8 +85,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }))
 
 
-    viewVids(vids, vidbox, iframes);
-    viewVids(impvids, vidbox, iframes);
+    /*     viewVids(vids, vidbox, iframes);
+        viewVids(impvids, vidbox, iframes); */
 
     lightbox.addEventListener('click', e => { closeViewbox(e, lightbox); })
     vidbox.addEventListener('click', e => { closeViewbox(e, vidbox, iframes); })
@@ -135,8 +135,9 @@ function navigation(section) {
     // Selects first tab on page 
     if (section === 'gallery') { document.getElementById("headshot").click(); }
     else if (section === 'videos') { document.getElementById("reels").click(); }
-    else if (section === 'improv') { document.getElementById("imp-vids").click(); }
     else if (section === 'resume') { document.querySelector(".resume").classList.remove('hidden'); }
+
+    else if (section === 'improv') { document.getElementById("imp-vids").click(); }
 
 
 
@@ -198,7 +199,7 @@ function viewImgs(img, least, most) {
     })
 }
 
-function viewVids(videos, vidbox, iframes) {
+/* function viewVids(videos, vidbox, iframes) {
     videos.forEach(video => video.addEventListener('click', e => {
 
         vidbox.classList.add('active');
@@ -210,7 +211,7 @@ function viewVids(videos, vidbox, iframes) {
         document.querySelector(`.${targ}`).classList.remove('hidden');
 
     }))
-}
+} */
 
 function closeViewbox(e, viewbox, iframes) {
     if (e.target == e.currentTarget) {
@@ -235,4 +236,8 @@ function showCollectionByTab(e, collection, classprefix) {
         collection.classList.remove('hidden');
         collection.classList.add('scale-up');
     }
+
+    document.querySelectorAll('.imp-vids .vid-vimprov').forEach(vid => vid.classList.remove('hidden'));
 }
+
+
