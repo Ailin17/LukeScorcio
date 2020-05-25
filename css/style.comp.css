@@ -508,7 +508,7 @@ p {
   margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .tab-wrapper {
-      grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); } }
 
 .tab {
   padding: 1.5rem 0rem;
