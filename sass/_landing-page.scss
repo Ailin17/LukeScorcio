@@ -159,14 +159,19 @@
 }
 
 .luke-info {
-  margin-top: 1rem;
-  & a {
-    color: $light-gray-1;
-    text-decoration: none;
-  }
+  margin-top: 1rem; 
 }
 
 .phone-no,
 .email {
+  text-decoration: none;
+}
+
+
+.email {
   color: $secondary;
+}
+
+.phone-no {
+  color:$light-gray-1;
 }

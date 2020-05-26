@@ -225,8 +225,8 @@
 }
 
 .big-menu {
-  animation: fadeIn 0.3s;
-  animation-direction: alternate;
+  //animation: fadeIn 0.3s;
+  //animation-direction: alternate;
   @media only screen and (max-width: 1000px) {
     position: absolute;
     z-index: 1000;
