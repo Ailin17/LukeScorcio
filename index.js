@@ -89,9 +89,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
         viewVids(impvids, vidbox, iframes); */
 
     lightbox.addEventListener('click', e => { closeViewbox(e, lightbox); })
-    vidbox.addEventListener('click', e => { closeViewbox(e, vidbox, iframes); })
+    //  vidbox.addEventListener('click', e => { closeViewbox(e, vidbox, iframes); })
+
+
+
 
 });
+
+
+const rarr = document.getElementById('rarr'); // Right Arrow
+const larr = document.getElementById('larr'); // Left Arrow
+
+// Previous Image
+/* if (larr){
+    larr.addEventListener('click', leftArrow());
+}
+
+if (rarr) {
+    rarr.addEventListener('click', rightArrow());
+} */
+// Next Image
 
 // =================================================================================== //
 // ==================================== Functions ==================================== //
@@ -170,48 +187,37 @@ function viewImgs(img, least, most) {
     const big_image = document.getElementById('big-image');
     big_image.src = img.src;
 
-    const rarr = document.getElementById('rarr'); // Right Arrow
-    const larr = document.getElementById('larr'); // Left Arrow
-
-    // Previous Image
-    larr.addEventListener('click', e => {
-        let current_img = document.getElementById('big-image').src;
-        let current_arr = current_img.split('img/img');
-        let number = parseInt(current_arr[1].split('.jpg')[0]); // Current img number;
-
-        // If next number is less than the gallery contains, it returns to the highest number
-        let new_img = number === least ? most : number - 1;
-
-        document.getElementById('big-image').src = `img/img${new_img}.jpg`;
-    })
-
-    // Next Image
-    rarr.addEventListener('click', e => {
-        let current_img = document.getElementById('big-image').src;
-        let current_arr = current_img.split('img/img');
-        let number = parseInt(current_arr[1].split('.jpg')[0]);
-
-        // If next number is more than the gallery contains, it returns to the first number
-        let new_img = number === most ? least : number + 1;
-
-        document.getElementById('big-image').src = `img/img${new_img}.jpg`;
-
-    })
+    localStorage.setItem('least', least);
+    localStorage.setItem('most', most);
 }
 
-/* function viewVids(videos, vidbox, iframes) {
-    videos.forEach(video => video.addEventListener('click', e => {
 
-        vidbox.classList.add('active');
+function leftArrow() {
+    let least = localStorage.getItem('least');
+    let most = localStorage.getItem('most');
+    let current_img = document.getElementById('big-image').src;
+    let current_arr = current_img.split('img/img');
+    let number = parseInt(current_arr[1].split('.jpg')[0]);
 
-        iframes.forEach(iframe => iframe.classList.add('hidden'));
+    // If next number is more than the gallery contains, it returns to the first number
+    let new_img = number == least ? most : number - 1;
 
-        // Shows selected video
-        let targ = video.id;
-        document.querySelector(`.${targ}`).classList.remove('hidden');
+    document.getElementById('big-image').src = `img/img${new_img}.jpg`;
+}
 
-    }))
-} */
+function rightArrow() {
+    let least = localStorage.getItem('least');
+    let most = localStorage.getItem('most');
+    let current_img = document.getElementById('big-image').src;
+    let current_arr = current_img.split('img/img');
+    let number = parseInt(current_arr[1].split('.jpg')[0]);
+
+    // If next number is more than the gallery contains, it returns to the first number
+    let new_img = number == most ? least : number + 1;
+
+    document.getElementById('big-image').src = `img/img${new_img}.jpg`;
+}
+
 
 function closeViewbox(e, viewbox, iframes) {
     if (e.target == e.currentTarget) {
@@ -224,7 +230,13 @@ function closeViewbox(e, viewbox, iframes) {
                 iframe.src = iframeSrc;
             });
         }
+        const rarr = document.getElementById('rarr'); // Right Arrow
+        const larr = document.getElementById('larr'); // Left Arrow
+
+        localStorage.removeItem('least');
+        localStorage.removeItem('most');
     }
+
 }
 
 function showCollectionByTab(e, collection, classprefix) {
@@ -239,5 +251,21 @@ function showCollectionByTab(e, collection, classprefix) {
 
     document.querySelectorAll('.imp-vids .vid-vimprov').forEach(vid => vid.classList.remove('hidden'));
 }
+
+
+
+/* function viewVids(videos, vidbox, iframes) {
+    videos.forEach(video => video.addEventListener('click', e => {
+
+        vidbox.classList.add('active');
+
+        iframes.forEach(iframe => iframe.classList.add('hidden'));
+
+        // Shows selected video
+        let targ = video.id;
+        document.querySelector(`.${targ}`).classList.remove('hidden');
+
+    }))
+} */
 
 

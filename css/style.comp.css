@@ -68,10 +68,8 @@
 
 @keyframes desaturate {
   0% {
-    filter: grayscale(0);
     transform: scale(1); }
   100% {
-    filter: grayscale(0.5);
     transform: scale(0.9); } }
 
 *,
@@ -867,7 +865,8 @@ a.improv-video-link {
   transition: 0.2s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none; }
+  -webkit-user-select: none;
+  text-decoration: none; }
   .prev:hover,
   .next:hover {
     background-color: rgba(255, 255, 255, 0.3); }
