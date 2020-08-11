@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="index.js"></script>
     <title>Luke Scorcio</title>
 </head>
 
@@ -56,14 +55,14 @@
                 <button class="main-nav__menu-btn" onclick="menuToggle()"></button>
             </div>
             <ul class="main-nav__list md-hidden" id="menu-list">
-                <li class="main-nav__item nav-landing-page main-nav__item--active "><a href='#'
-                        onclick="navigation('landing-page')">Home</a></li>
-                <li class="main-nav__item nav-videos"><a href='#videos' onclick="navigation('videos')">Videos</a></li>
-                <li class="main-nav__item nav-gallery"><a href='#gallery' onclick="navigation('gallery')">Gallery</a>
+                <li class="main-nav__item nav-landing-page main-nav__item--active" id="landing-page"><a
+                        href='#'>Home</a></li>
+                <li class="main-nav__item nav-videos" id="videos"><a href='#videos'>Videos</a></li>
+                <li class="main-nav__item nav-gallery" id="gallery"><a href='#gallery'>Gallery</a>
                 </li>
-                <li class="main-nav__item nav-resume"><a href='#resume' onclick="navigation('resume')">Resum&eacute;</a>
+                <li class="main-nav__item nav-resume" id="resume"><a href='#resume'>Resum&eacute;</a>
                 </li>
-                <li class="main-nav__item nav-improv"><a href='#improv' onclick="navigation('improv')">Improv</a></li>
+                <li class="main-nav__item nav-improv" id="improv"><a href='#improv'>Improv</a></li>
                 <!--                 <li class="main-nav__item"><a href='#' onclick="navigation('contact')">Contact</a></li>
  -->
             </ul>
@@ -221,7 +220,7 @@
                 <a href="#" id="theater" class="tab tab--theater"><span class="tab__text">Theater</span></a>
             </div>
             <div class="gallery-img-wrapper">
-                <img src="img/img1.jpg" alt="" class="gallery-img gallery-img--headshot">
+                <!--           <img src="img/img1.jpg" alt="" class="gallery-img gallery-img--headshot">
                 <img src="img/img2.jpg" alt="" class="gallery-img gallery-img--headshot">
                 <img src="img/img3.jpg" alt="" class="gallery-img gallery-img--headshot">
                 <img src="img/img4.jpg" alt="" class="gallery-img gallery-img--headshot">
@@ -229,9 +228,6 @@
                 <img src="img/img6.jpg" alt="" class="gallery-img gallery-img--headshot">
                 <img src="img/img7.jpg" alt="" class="gallery-img gallery-img--headshot">
                 <img src="img/img8.jpg" alt="" class="gallery-img gallery-img--headshot">
-
-
-
                 <img src="img/img9.jpg" alt="" class="gallery-img gallery-img--film hidden">
                 <img src="img/img10.jpg" alt="" class="gallery-img gallery-img--film hidden">
                 <img src="img/img11.jpg" alt="" class="gallery-img gallery-img--film hidden">
@@ -254,7 +250,7 @@
                 <img src="img/img28.jpg" alt="" class="gallery-img gallery-img--theater hidden">
                 <img src="img/img29.jpg" alt="" class="gallery-img gallery-img--theater obj-pos-top hidden">
                 <img src="img/img30.jpg" alt="" class="gallery-img gallery-img--theater hidden">
-                <img src="img/img31.jpg" alt="" class="gallery-img gallery-img--theater hidden">
+                <img src="img/img31.jpg" alt="" class="gallery-img gallery-img--theater hidden"> -->
             </div>
         </div>
     </section>
@@ -305,7 +301,8 @@
             </div>
             <div class="improv-bio-wrapper imp-bio improv-sec hidden">
                 <p class="improv-bio">Luke has studied improv at UCB Los Angeles and iO West. He performs regularly on
-                    the team Pretty Ugly which is coached by Brian James O’Connell. Back in Oshkosh, Luke was one of the original improv team members at The
+                    the team Pretty Ugly which is coached by Brian James O’Connell. Back in Oshkosh, Luke was one of the
+                    original improv team members at The
                     Backlot Comedy House and was the creator of The Adventures of Sammy the Space Slug.</p>
             </div>
         </div>
@@ -319,7 +316,7 @@
         <a href="#" onclick="leftArrow()" id="larr" class="prev">&#10094;</a>
         <a href="#" onclick="rightArrow()" id="rarr" class="next">&#10095;</a>
     </div>
-
+    <script type="module" defer src="index.js"></script>
 </body>
 
 </html>
