@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }))
 
     impimgs.forEach(impimg => impimg.addEventListener('click', e => {
-        let least = 10;
-        let most = 12;
+        let least = 13;
+        let most = 15;
         viewImgs(impimg, least, most);
     }))
 
