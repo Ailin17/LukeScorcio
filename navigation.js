@@ -40,7 +40,7 @@ export function navigation(section) {
 
 }
 
-function menuToggle() {
+export function menuToggle() {
 
     const menu = document.getElementById("menu-list").classList;
     const nav_container = document.getElementById("nav-container").classList;
