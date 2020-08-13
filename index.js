@@ -1,25 +1,7 @@
 
 import { navigation } from '/navigation.js'
 import landingPage from '/landingpage.js'
-import testjson from '/imagesJson.js'
-
-/* const theater = testjson.filter(img => img.category === 'theater');
-
-const theaterImages = theater.map(img => `<img src="img/${img.filename}" alt="" class="gallery-img gallery-img--${img.category}">`)
-
-console.log(theaterImages); */
-
-
-
-
-
-
-
-
-
-
-
-
+import { tabClick } from '/gallery.js'
 
 
 
@@ -60,7 +42,8 @@ const landing_btn = document.querySelector('#contact-info__btn');
 landing_btn.addEventListener('click', landingPage);
 
 
-tabs.forEach(tab => tab.addEventListener('click', (e) => {
+tabs.forEach(tab => tab.addEventListener('click', (e) => { tabClick(e) }))
+/* (e) => {
 
     tabs.forEach(t => t.classList.remove('tab--active'))
     const currentTarget = e.currentTarget.id;
@@ -70,7 +53,7 @@ tabs.forEach(tab => tab.addEventListener('click', (e) => {
 
     let html = ''
     const imagesToShow = currentView.forEach(img => 
-        html +=`<img src="img/${img.filename}" alt="" class="gallery-img gallery-img--${img.category} scale-up">`
+        html +=`<img src="img/${img.filename}" alt="" class="gallery-img gallery-img--${img.category} scale-up ${ img.class ? img.class : '' }">`
         )
 
     document.querySelector('.gallery-img-wrapper').innerHTML = html;
@@ -88,7 +71,7 @@ tabs.forEach(tab => tab.addEventListener('click', (e) => {
 
     tab.classList.add('tab--active');
 }
-))
+)) */
 
 
 imgs.forEach(img => img.addEventListener('click', e => {

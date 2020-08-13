@@ -62,19 +62,23 @@ export default [
     }, {
         "id": 16,
         "filename": "img16.jpg",
-        "category": "redcarpet"
+        "category": "redcarpet",
+        "class": "obj-pos-top"
     }, {
         "id": 17,
         "filename": "img17.jpg",
-        "category": "redcarpet"
+        "category": "redcarpet",
+        "class": "obj-pos-top"
     }, {
         "id": 18,
         "filename": "img18.jpg",
-        "category": "redcarpet"
+        "category": "redcarpet",
+        "class": "obj-pos-top"
     }, {
         "id": 19,
         "filename": "img19.jpg",
-        "category": "redcarpet"
+        "category": "redcarpet",
+        "class": "obj-pos-top"
     }, {
         "id": 20,
         "filename": "img20.jpg",
@@ -90,15 +94,18 @@ export default [
     }, {
         "id": 23,
         "filename": "img23.jpg",
-        "category": "theater"
+        "category": "theater",
+        "class": "obj-pos-top"
     }, {
         "id": 24,
         "filename": "img24.jpg",
-        "category": "theater"
+        "category": "theater",
+        "class": "obj-pos-top"
     }, {
         "id": 25,
         "filename": "img25.jpg",
-        "category": "theater"
+        "category": "theater",
+        "class": "obj-pos-20"
     }, {
         "id": 26,
         "filename": "img26.jpg",
@@ -114,7 +121,8 @@ export default [
     }, {
         "id": 29,
         "filename": "img29.jpg",
-        "category": "theater"
+        "category": "theater",
+        "class": "obj-pos-top"
     }, {
         "id": 30,
         "filename": "img30.jpg",
